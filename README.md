@@ -1,4 +1,4 @@
-# CatanBoardGameGen
+# Catan Board Generator
 A simple app to generate boards for Catan and some of its extensions. Clicking generate randomly allocates each hexagon to with a terrain type and a number token, the quantities of which vary between the different board set ups. Some of the Seafarers extension games also have additional allocation rules.
 
 *The main menu: the hexagons are navigation buttons*
