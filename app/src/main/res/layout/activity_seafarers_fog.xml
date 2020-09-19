@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SeafarersFogActivity"
+    android:gravity="center"
+    android:background="@color/colorAccent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="@android:dimen/notification_large_icon_height">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="-7dp">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp">
+
+                <ImageView
+                    android:id="@+id/gold1"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/gold_hex" />
+
+                <TextView
+                    android:id="@+id/text_gold1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="10"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp">
+                <ImageView
+                    android:id="@+id/empty1"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hexagon" />
+                <TextView
+                    android:id="@+id/text_empty1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text=" ? "
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp">
+                <ImageView
+                    android:id="@+id/empty2"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hexagon" />
+
+                <TextView
+                    android:id="@+id/text_empty2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text=" ? "
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp">
+                <ImageView
+                    android:id="@+id/empty3"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hexagon" />
+                <TextView
+                    android:id="@+id/text_empty3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text=" ? "
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                <ImageView
+                    android:id="@+id/gold2"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/gold_hex" />
+                <TextView
+                    android:id="@+id/text_gold2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="11"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="-8dp"
+            android:layout_marginRight="-7dp" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp">
+                <ImageView
+                    android:id="@+id/empty4"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hexagon" />
+                <TextView
+                    android:id="@+id/text_empty4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text=" ? "
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp">
+                <ImageView
+                    android:id="@+id/empty5"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hexagon" />
+                <TextView
+                    android:id="@+id/text_empty5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text=" ? "
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp">
+                <ImageView
+                    android:id="@+id/empty6"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hexagon" />
+                <TextView
+                    android:id="@+id/text_empty6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text=" ? "
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp">
+                <ImageView
+                    android:id="@+id/empty7"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hexagon" />
+                <TextView
+                    android:id="@+id/text_empty7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text=" ? "
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp">
+                <ImageView
+                    android:id="@+id/empty8"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hexagon" />
+                <TextView
+                    android:id="@+id/text_empty8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text=" ? "
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                <ImageView
+                    android:id="@+id/empty9"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hexagon" />
+                <TextView
+                    android:id="@+id/text_empty9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text=" ? "
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="-8dp"
+            android:layout_marginRight="-7dp" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp">
+                <ImageView
+                    android:id="@+id/empty10"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hexagon" />
+                <TextView
+                    android:id="@+id/text_empty10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text=" ? "
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp">
+                <ImageView
+                    android:id="@+id/empty11"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hexagon" />
+                <TextView
+                    android:id="@+id/text_empty11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text=" ? "
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp">
+                <ImageView
+                    android:id="@+id/empty12"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hexagon" />
+                <TextView
+                    android:id="@+id/text_empty12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text=" ? "
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp">
+                <ImageView
+                    android:id="@+id/empty13"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hexagon" />
+                <TextView
+                    android:id="@+id/text_empty13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text=" ? "
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp">
+                <ImageView
+                    android:id="@+id/empty14"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hexagon" />
+                <TextView
+                    android:id="@+id/text_empty14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text=" ? "
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp">
+                <ImageView
+                    android:id="@+id/empty15"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hexagon" />
+                <TextView
+                    android:id="@+id/text_empty15"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text=" ? "
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                <ImageView
+                    android:id="@+id/empty16"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hexagon" />
+                <TextView
+                    android:id="@+id/text_empty16"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text=" ? "
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="-8dp"
+            android:layout_marginRight="-7dp" >
+
+            <ImageView
+                android:id="@+id/sea1"
+                android:layout_width="57dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="-1dp"
+                android:background="@drawable/blue_hex" />
+
+            <ImageView
+                android:id="@+id/sea2"
+                android:layout_width="57dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="-1dp"
+                android:background="@drawable/blue_hex" />
+
+            <ImageView
+                android:id="@+id/sea3"
+                android:layout_width="57dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="-1dp"
+                android:background="@drawable/blue_hex" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp">
+                <ImageView
+                    android:id="@+id/empty17"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hexagon" />
+                <TextView
+                    android:id="@+id/text_empty17"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text=" ? "
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp">
+                <ImageView
+                    android:id="@+id/empty18"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hexagon" />
+                <TextView
+                    android:id="@+id/text_empty18"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text=" ? "
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/sea4"
+                android:layout_width="57dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="-1dp"
+                android:background="@drawable/blue_hex" />
+
+            <ImageView
+                android:id="@+id/sea5"
+                android:layout_width="57dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="-1dp"
+                android:background="@drawable/blue_hex" />
+
+            <ImageView
+                android:id="@+id/sea6"
+                android:layout_width="57dp"
+                android:layout_height="50dp"
+                android:background="@drawable/blue_hex" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="-8dp"
+            android:layout_marginRight="-7dp" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp" >
+                <ImageView
+                    android:id="@+id/block1"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hexagon" />
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp" >
+
+                <ImageView
+                    android:id="@+id/block2"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hexagon" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/sea7"
+                android:layout_width="57dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="-1dp"
+                android:background="@drawable/blue_hex" />
+
+            <ImageView
+                android:id="@+id/sea8"
+                android:layout_width="57dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="-1dp"
+                android:background="@drawable/blue_hex" />
+
+            <ImageView
+                android:id="@+id/sea9"
+                android:layout_width="57dp"
+                android:layout_height="50dp"
+                android:background="@drawable/blue_hex" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp" >
+                <ImageView
+                    android:id="@+id/block3"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hexagon" />
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                <ImageView
+                    android:id="@+id/block4"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hexagon" />
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="-8dp"
+            android:layout_marginRight="-7dp" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp" >
+                <ImageView
+                    android:id="@+id/block5"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hexagon" />
+                <TextView
+                    android:id="@+id/text5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp" >
+                <ImageView
+                    android:id="@+id/block6"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hexagon" />
+                <TextView
+                    android:id="@+id/text6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp" >
+                <ImageView
+                    android:id="@+id/block7"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hexagon" />
+                <TextView
+                    android:id="@+id/text7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp" >
+                <ImageView
+                    android:id="@+id/block8"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hexagon" />
+                <TextView
+                    android:id="@+id/text8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp" >
+                <ImageView
+                    android:id="@+id/block9"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hexagon" />
+                <TextView
+                    android:id="@+id/text9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                <ImageView
+                    android:id="@+id/block10"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hexagon" />
+                <TextView
+                    android:id="@+id/text10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="-8dp" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp">
+                <ImageView
+                    android:id="@+id/block11"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hexagon" />
+                <TextView
+                    android:id="@+id/text11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp">
+                <ImageView
+                    android:id="@+id/block12"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hexagon" />
+                <TextView
+                    android:id="@+id/text12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp" >
+                <ImageView
+                    android:id="@+id/block13"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hexagon" />
+                <TextView
+                    android:id="@+id/text13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp">
+                <ImageView
+                    android:id="@+id/block14"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hexagon" />
+                <TextView
+                    android:id="@+id/text14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                <ImageView
+                    android:id="@+id/block15"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hexagon" />
+                <TextView
+                    android:id="@+id/text15"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/generate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:background="@drawable/custom_rounded_corners"
+        android:onClick="generateBoard"
+        android:padding="20dp"
+        android:text="Generate"
+        android:textSize="20dp" />
+
+</LinearLayout>
